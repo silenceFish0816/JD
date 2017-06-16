@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.bgbanner{
+    position: relative;
+}
+
+.bgbanner a{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 604px;
+    background: url("../img/banner.jpg") no-repeat top center;
+
+}
+.main{
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.main .rightlist{
+    height: 451px;
+    width: 248px;
+    border: 1px solid #E4E4E4;
+    float: right;
+}
+.main .slider{
+    width: 730px;
+    height: 453px;
+    background-color: pink;
+    float: right;
+    margin-right: 10px;
+    position: relative;
+}
+
+.main .slider .circle{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    margin-left: -55px;
+}
+.main .slider .circle li{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #3E3E3E;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.main .slider .circle li.current{
+    background-color: #B61D1D;
+}
+.arrow-l ,
+.arrow-r {
+    position: absolute;
+    width: 28px;
+    height: 62px;
+    background-color: gainsboro;
+    background: rgba(0,0,0,0.2);
+    top: 50%;
+    margin-top: -31px;
+    color: white;
+    font: 200 18px/62px "宋体";
+    text-align: center;
+}
+.arrow-l{
+    left: 0;
+}
+.arrow-r{
+    right: 0;
+}
