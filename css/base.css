@@ -473,7 +473,14 @@ s, i, em {
 }
 
 /*底部*/
+
 .jd-footer{
+    background-color: #F5F5F5;
+}
+
+.jd-footer .service{
+    position: relative;
+    display: block;
     background-color: #F5F5F5;
 }
 .jd-footer .service .slogen{
@@ -503,8 +510,7 @@ s, i, em {
 .slogen4{
     margin-left: 304px;
 }
-.jd-footer .service .slogen .w{
-}
+
 
 .jd-footer .service dl{
     float: left;
@@ -531,6 +537,7 @@ s, i, em {
     text-align: left;
     line-height: 18px;
     margin-top: 10px;
+    padding: 0 15px;
 }
 .jd-footer .service .coverage dd p{
     text-align: right;
@@ -562,8 +569,6 @@ s, i, em {
 .message{
     text-align: center;
 }
-
-
 
 
 

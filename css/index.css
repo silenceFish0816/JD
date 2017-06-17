@@ -14,18 +14,132 @@
 
 }
 .main{
-    height: 700px;
     position: relative;
     z-index: 1;
 }
-
 
 .main .rightlist{
     height: 451px;
     width: 248px;
     border: 1px solid #E4E4E4;
     float: right;
+    overflow: hidden;
 }
+.jd-news{
+    height: 200px;
+    border-bottom: 1px dashed #E8E8E7;
+}
+
+.jd-news dt,
+.life-service dt{
+    height: 43px;
+    border-bottom: 1px dotted #E8E8E7;
+    padding: 0 10px;
+    font: 400 14px/43px "microsoft yahei";
+}
+
+
+.jd-news dt h3{
+    float: left;
+
+}
+
+.jd-news dt a{
+    float: right;
+}
+.jd-news dd ul{
+    padding: 8px 0 0 15px;
+}
+
+.jd-news ul li{
+    line-height: 28px;
+}
+.jd-news dd li span{
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.life-service {
+    width: 252px;
+    position: relative;
+}
+
+.life-service dd li {
+    position: relative;
+    height: 69px;
+    width: 62px;
+    border-bottom: 1px solid #E4E4E4;
+    border-left: 1px solid #E4E4E4;
+    float: left;
+    margin: -1px 0 0 -1px;
+    text-align: center;
+}
+
+.life-service dd li a{
+    display: block;
+    padding-top: 45px;
+    height: 70px;
+    text-align: center;
+}
+
+.life-service dd li a i{
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    width: 48px;
+    height: 48px;
+    background: url("../img/icon_lifeserv.png") no-repeat;
+    background-position: 1px -136px;
+    transform: scale(0.5);
+
+}
+.life-service .lifeservice-icon2 a i{
+    background-position: 1px -68px;
+}
+
+.life-service .lifeservice-icon3 a i{
+    background-position: -68px -136px;
+}
+.life-service .lifeservice-icon4 a i{
+    background-position: -136px top;
+}
+.life-service .lifeservice-icon5 a i{
+    background-position: -136px -68px;
+}
+.life-service .lifeservice-icon6 a i{
+    background-position: 1px top;
+}
+.life-service .lifeservice-icon7 a i{
+    background-position: -68px -68px;
+}
+.life-service .lifeservice-icon8 a i{
+    background-position: -136px -136px;
+}
+.life-service .lifeservice-icon9 a i{
+    background-position:  -204px top;
+}
+.life-service .lifeservice-icon10 a i{
+    background-position: -204px -68px;
+}
+.life-service .lifeservice-icon11 a i{
+    background-position: -204px -136px;
+}
+.life-service .lifeservice-icon12 a i{
+    background-position: -68px top;
+}
+.life-service .derate{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #C81623;
+    font: 400 8px/16px "宋体";
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 44px;
+    border-radius: 6px 6px 6px 0;
+}
+
 .main .slider{
     width: 730px;
     height: 453px;
@@ -52,6 +166,7 @@
     color: white;
     margin: 0 2px;
     cursor: pointer;
+
 }
 .main .slider .circle li.current{
     background-color: #B61D1D;
@@ -61,7 +176,6 @@
     position: absolute;
     width: 28px;
     height: 62px;
-    background-color: gainsboro;
     background: rgba(0,0,0,0.2);
     top: 50%;
     margin-top: -31px;
@@ -75,3 +189,13 @@
 .arrow-r{
     right: 0;
 }
+.arrow-l:hover ,
+.arrow-r:hover{
+    background: rgba(0,0,0,0.4);
+}
+
+
+
+/*11活动*/
+.todays{position: relative}
+
