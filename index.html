@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript" src="JS/js.js"></script>
     <title>Document</title>
 </head>
 <body>
+
+
+
 <!--京东放入头部开始导航-->
 <div class="banner">
     <div class="w">
@@ -21,9 +25,9 @@
             </div>
         </div>
         <div class="fr">
-            <ul>
+            <ul>s
                 <li>
-                    <a href="#">你好，请登陆</a>&nbsp;&nbsp;
+                    <a href="#" id="loginclick">你好，请登陆</a>&nbsp;&nbsp;
                     <a href="#" class="col-red">免费注册</a>
                 </li>
                 <li class="line"></li>
@@ -59,14 +63,21 @@
 </div>
 <!--京东头部导航结束-->
 
+<div class="mask" id="mask">
+    <div class="login">
+        <span id="close_box">x</span>
+    </div>
+</div>
+
 <!--京东的topbanner部分-->
-<div class="top-banner">
+<div class="top-banner" id="top_banner">
     <div class="w topbannerparent">
         <img src="./img/topbanner.jpg" alt="">
-        <a href="javascript:;" class="close-banner"></a>
+        <a href="javascript:;" class="close-banner" id="close_banner"></a>
     </div>
 
 </div>
+
 <!--topbanner结束-->
 
 <!--搜索部分-->
@@ -76,7 +87,7 @@
         <img src="img/dong.gif" alt="">
     </div>
     <div class="search">
-        <input type="text" id="text" plac eholder="搜索">
+        <input type="text" id="txt" value="搜索">
         <input type="submit" id="button" value="搜索">
     </div>
     <div class="list">
@@ -134,15 +145,35 @@
                     <span>⟩</span>
                 </dd>
                 <dd>
-                    <a href="#">户外运动</a>
-                    <span>⟩</span>
-                </dd>
-                <dd>
                     <a href="#">汽车／汽车用品</a>
                     <span>⟩</span>
                 </dd>
                 <dd>
                     <a href="#">母婴／玩具乐器</a>
+                    <span>⟩</span>
+                </dd>
+                <dd>
+                    <a href="#">食品 / 酒类 / 生鲜 / 特产</a>
+                    <span>⟩</span>
+                </dd>
+                <dd>
+                    <a href="#">礼品鲜花 / 农资绿植</a>
+                    <span>⟩</span>
+                </dd>
+                <dd>
+                    <a href="#">医药保健 / 计生情趣</a>
+                    <span>⟩</span>
+                </dd>
+                <dd>
+                    <a href="#">图书 / 音像 / 电子书</a>
+                    <span>⟩</span>
+                </dd>
+                <dd>
+                    <a href="#"> 机票 / 酒店 / 旅游 / 生活</a>
+                    <span>⟩</span>
+                </dd>
+                <dd>
+                    <a href="#">理财 / 众筹 / 白条 / 保险</a>
                     <span>⟩</span>
                 </dd>
             </dl>
@@ -280,27 +311,45 @@
         </div>
 
     </div>
-    <div class="slider">
-        <a href="#"><img src="img/slider1.jpg" alt=""></a>
-        <ul class="circle">
-            <li>1</li>
-            <li>2</li>
-            <li class="current">3</li>
-            <li>4</li>
-            <li>5</li>
+    <div class="slider" id="slide">
+        <a href="javascript:;"><img src="img/11.jpg" alt=""></a>
+        <a href="javascript:;"><img src="img/22.jpg" alt=""></a>
+        <a href="javascript:;" style="display: block"><img src="img/33.jpg" alt="" ></a>
+        <a href="javascript:;"><img src="img/44.jpg" alt=""></a>
+        <a href="javascript:;"><img src="img/55.jpg" alt=""></a>
+
+        <ul class="circle" id="circle">
+            <li id="li01">1</li>
+            <li id="li02">2</li>
+            <li class="current" id="li03">3</li>
+            <li id="li04">4</li>
+            <li id="li05">5</li>
         </ul>
-        <div class="arrow"><!--左右两个三角-->
+        <div class="arrow" id="arr"><!--左右两个三角-->
             <a href="javascript:;" class="arrow-l">⟨</a>
             <a href="javascript:;" class="arrow-r">⟩</a>
         </div>
+
         </ul>
     </div>
 </div>
 
 <!--双十一 的某个活动-->
 
-<div class=" w todays">
-    
+<div class="w todays clearfix">
+    <div class="night">
+        <div class="night-l">
+            <img src="img/night.jpg" alt="">
+        </div>
+        <div class="night-r">
+            <ul>
+                <li><a href="#"><img src="img/1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/4.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 

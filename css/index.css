@@ -1,60 +1,63 @@
 @charset "UTF-8";
 
-.bgbanner{
+.bgbanner {
     position: relative;
 }
 
-.bgbanner a{
+.bgbanner a {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     height: 604px;
     background: url("../img/banner.jpg") no-repeat top center;
 
 }
-.main{
+
+.main {
     position: relative;
     z-index: 1;
 }
 
-.main .rightlist{
+.main .rightlist {
     height: 451px;
     width: 248px;
     border: 1px solid #E4E4E4;
     float: right;
     overflow: hidden;
 }
-.jd-news{
+
+.jd-news {
     height: 200px;
     border-bottom: 1px dashed #E8E8E7;
 }
 
 .jd-news dt,
-.life-service dt{
+.life-service dt {
     height: 43px;
     border-bottom: 1px dotted #E8E8E7;
     padding: 0 10px;
     font: 400 14px/43px "microsoft yahei";
 }
 
-
-.jd-news dt h3{
+.jd-news dt h3 {
     float: left;
 
 }
 
-.jd-news dt a{
+.jd-news dt a {
     float: right;
 }
-.jd-news dd ul{
+
+.jd-news dd ul {
     padding: 8px 0 0 15px;
 }
 
-.jd-news ul li{
+.jd-news ul li {
     line-height: 28px;
 }
-.jd-news dd li span{
+
+.jd-news dd li span {
     font-weight: 700;
     margin-right: 5px;
 }
@@ -75,14 +78,14 @@
     text-align: center;
 }
 
-.life-service dd li a{
+.life-service dd li a {
     display: block;
     padding-top: 45px;
     height: 70px;
     text-align: center;
 }
 
-.life-service dd li a i{
+.life-service dd li a i {
     position: absolute;
     top: 5px;
     left: 7px;
@@ -93,41 +96,52 @@
     transform: scale(0.5);
 
 }
-.life-service .lifeservice-icon2 a i{
+
+.life-service .lifeservice-icon2 a i {
     background-position: 1px -68px;
 }
 
-.life-service .lifeservice-icon3 a i{
+.life-service .lifeservice-icon3 a i {
     background-position: -68px -136px;
 }
-.life-service .lifeservice-icon4 a i{
+
+.life-service .lifeservice-icon4 a i {
     background-position: -136px top;
 }
-.life-service .lifeservice-icon5 a i{
+
+.life-service .lifeservice-icon5 a i {
     background-position: -136px -68px;
 }
-.life-service .lifeservice-icon6 a i{
+
+.life-service .lifeservice-icon6 a i {
     background-position: 1px top;
 }
-.life-service .lifeservice-icon7 a i{
+
+.life-service .lifeservice-icon7 a i {
     background-position: -68px -68px;
 }
-.life-service .lifeservice-icon8 a i{
+
+.life-service .lifeservice-icon8 a i {
     background-position: -136px -136px;
 }
-.life-service .lifeservice-icon9 a i{
-    background-position:  -204px top;
+
+.life-service .lifeservice-icon9 a i {
+    background-position: -204px top;
 }
-.life-service .lifeservice-icon10 a i{
+
+.life-service .lifeservice-icon10 a i {
     background-position: -204px -68px;
 }
-.life-service .lifeservice-icon11 a i{
+
+.life-service .lifeservice-icon11 a i {
     background-position: -204px -136px;
 }
-.life-service .lifeservice-icon12 a i{
+
+.life-service .lifeservice-icon12 a i {
     background-position: -68px top;
 }
-.life-service .derate{
+
+.life-service .derate {
     display: block;
     width: 16px;
     height: 16px;
@@ -140,7 +154,7 @@
     border-radius: 6px 6px 6px 0;
 }
 
-.main .slider{
+.main .slider {
     width: 730px;
     height: 453px;
     background-color: pink;
@@ -149,13 +163,18 @@
     position: relative;
 }
 
-.main .slider .circle{
+.slider a{
+    display: none;
+}
+
+.main .slider .circle {
     position: absolute;
     bottom: 8px;
     left: 50%;
     margin-left: -55px;
 }
-.main .slider .circle li{
+
+.main .slider .circle li {
     float: left;
     width: 18px;
     height: 18px;
@@ -168,34 +187,60 @@
     cursor: pointer;
 
 }
-.main .slider .circle li.current{
+
+.main .slider .circle li.current {
     background-color: #B61D1D;
 }
-.arrow-l ,
+.arrow{
+    visibility: hidden;
+}
+
+.arrow-l,
 .arrow-r {
     position: absolute;
     width: 28px;
     height: 62px;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     top: 50%;
     margin-top: -31px;
     color: white;
     font: 200 18px/62px "宋体";
     text-align: center;
 }
-.arrow-l{
+
+.arrow-l {
     left: 0;
 }
-.arrow-r{
+
+.arrow-r {
     right: 0;
 }
-.arrow-l:hover ,
-.arrow-r:hover{
-    background: rgba(0,0,0,0.4);
+
+.arrow-l:hover,
+.arrow-r:hover {
+    background: rgba(0, 0, 0, 0.4);
 }
 
-
-
 /*11活动*/
-.todays{position: relative}
-
+.todays {
+    position: relative;
+}
+.night{
+    margin: 10px 0 28px 0;
+}
+.night-l{
+    float: left;
+}
+.night-r{
+    width: 1000px;
+    height: 160px;
+    float: left;
+    overflow: hidden;
+}
+.night-r ul{
+    width: 1500%;
+}
+.night-r ul li{
+    float: left;
+    margin-left: 5px;
+}
